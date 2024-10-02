@@ -14,5 +14,9 @@ ro.surface_flinger.set_idle_timer_ms=500
 ro.surface_flinger.set_touch_timer_ms=2000
 ro.surface_flinger.use_smart_90_for_video=true
 
+# NFC
+persist.vendor.nfc.config_secfile_name=libnfc-sec-nci.conf
+persist.vendor.nfc.reset_after_sim_plug_in=true
+
 # Radio
 ro.vendor.radio.imei.sv=21

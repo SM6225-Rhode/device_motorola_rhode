@@ -26,7 +26,18 @@ TARGET_SCREEN_WIDTH := 1080
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung
+    android.hardware.nfc-service.nxp
+
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2.vendor \
+    android.hardware.secure_element@1.2.vendor \
+
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service.samsung \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag 
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
